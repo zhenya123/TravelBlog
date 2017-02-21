@@ -1,0 +1,26 @@
+{
+  "name": "travel-blog",
+  "version": "1.0.0",
+  "description": "My travel blog",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^3.16.0"
+  },
+  "devDependencies": {
+    "d3": "^4.6.0",
+    "eslint": "^3.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenya123/TravelBlog.git"
+  },
+  "author": "Zhenya Trainel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenya123/TravelBlog/issues"
+  },
+  "homepage": "https://github.com/zhenya123/TravelBlog#readme"
+}
