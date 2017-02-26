@@ -1,0 +1,72 @@
+path {
+  cursor: pointer;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'neue-helvetica', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.feedback {
+  font-size: 16px;
+}
+
+.country-name {
+  font-family: 'neue-helvetica', 'Helvetica Neue', Helvetica, sans-serif;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  font-size: 25px;
+  color: #4E8098;
+  font-weight: 300;
+}
+
+.section-header {
+  font-family: 'neue-helvetica', 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: left;
+  color: #4E8098;
+  margin-left: 15px;
+  font-weight: 300;
+}
+
+#name-box {
+  color: #8EAEBD;
+  margin-left: 15px;
+  font-weight: 300;
+}
+
+.rating-label {
+  margin-left: 15px;
+  color: #777;
+  font-weight: 200;
+  font-size: 16px;
+  font-family: 'neue-helvetica', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#star-display {
+  padding-left: 15px;
+}
+
+.well {
+  color: #777;
+}
+
+.nav {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+
+}
+
+.footer {
+  text-align: center;
+}
+
+h4 {
+  font-weight: 300;
+}
