@@ -70,3 +70,11 @@ body {
 h4 {
   font-weight: 300;
 }
+
+#submit-rating {
+  color: #4E8098;
+}
+
+.feedback {
+  color: #4E8098;
+}
