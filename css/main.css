@@ -63,8 +63,10 @@ body {
 
 }
 
-.footer {
+.container-fluid {
   text-align: center;
+  font-family: 'neue-helvetica', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777;
 }
 
 h4 {
