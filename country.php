@@ -37,16 +37,58 @@
         <div class="col-sm-5">
           <div id="container-graph" style="min-width: 310px; height: 300px; margin: 0 auto"></div>
         </div>
-        <?php
-          // include_once('graph.php');
-          include_once('ratings.php');
-        ?>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Food</h4>
+            <input id="star-display" value="<? echo floatval(getAverageRating('FOOD')); ?>" class="rating" data-size="xs" readonly="true" data-show-clear="false" data-show-caption="false">
+          </div>
+          <div class="well">
+            <h4>Wealth</h4>
+            <input id="star-display" value="<? echo floatval(getAverageRating('WEALTH')); ?>" class="rating" data-size="xs" readonly="true" data-show-clear="false" data-show-caption="false">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well">
+            <h4>Hospitality</h4>
+            <input id="star-display" value="<? echo floatval(getAverageRating('HOSPITALITY')); ?>" class="rating" data-size="xs" readonly="true" data-show-clear="false" data-show-caption="false">
+          </div>
+          <div class="well">
+            <h4>Safety</h4>
+            <input id="star-display" value="<? echo floatval(getAverageRating('SAFETY')); ?>" class="rating" data-size="xs" readonly="true" data-show-clear="false" data-show-caption="false">
+          </div>
+        </div>
+
       </div>
       <hr>
     </div>
-
+    <form id="rating" class="container" method="post">
+      <h3 class="section-header">Rate your trip to <? echo getCountryName(); ?></h3>
+      <br>
+      <div>
+        <label class="rating-label">Rate Food</label>
+        <div class="col-10">
+          <input id="star-display" name="food" class="rating" data-size="xs" data-show-clear="false" data-show-caption="false">
+        </div>
+        <label class="rating-label">Rate Hospitality</label>
+        <div class="col-10">
+          <input id="star-display" name="hospitality" class="rating" data-size="xs" data-show-clear="false" data-show-caption="false">
+        </div>
+        <label class="rating-label">Rate Wealth</label>
+        <div class="col-10">
+          <input id="star-display" name="wealth" class="rating" data-size="xs" data-show-clear="false" data-show-caption="false">
+        </div>
+        <label class="rating-label">Rate Safety</label>
+        <div class="col-10">
+          <input id="star-display" name="safety" class="rating" data-size="xs" data-show-clear="false" data-show-caption="false">
+        </div>
+        <input name="code" hidden="true" value="<? echo getCountryCode(); ?>">
+        <br>
+        <button type="submit" name="submit" id="submit-rating" class="btn btn-default btn-lg" <?php if($showMessage) {?> style="display: none;" <?php } ?>>Submit</button>
+        <p class="feedback" <?php if(!$showMessage) {?> hidden="true" <?php } ?>>Thanks! The rating was updated based on your feedback!</p>
+      </div>
+      <hr>
+    </form>
     <?php
-      include_once('submit-form.php');
       include_once('footer.php');
     ?>
 
