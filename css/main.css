@@ -52,6 +52,7 @@ body {
 
 .well {
   color: #777;
+  background-color: #fff;
 }
 
 .nav {
@@ -79,4 +80,8 @@ h4 {
 
 .feedback {
   color: #4E8098;
+}
+
+.col-sm-3 {
+  align-self:flex-end;
 }

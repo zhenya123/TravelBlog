@@ -21,15 +21,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Travel Blog</a>
+            <a class="navbar-brand" href="index.php">Travel Blog</a>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
               </li>
               <li>
-                <a href="stats.html">Stats</a>
+                <a href="stats.php">Stats</a>
               </li>
             </ul>
           </div>

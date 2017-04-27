@@ -8,10 +8,10 @@ var myCountries = {
   'CA': true,
 };
 
-var visitiedDefColor = '#4E8098'
-var visitedHovColor = '#75485E'//'#F2E94E'
-var notVisitiedDefColor = '#CED3DC'
-var notVisitedHovColor = '#8EAEBD'
+var visitiedDefColor = '#4E8098';
+var visitedHovColor = '#75485E';//'#F2E94E'
+var notVisitiedDefColor = '#CED3DC';
+var notVisitedHovColor = '#8EAEBD';
 
 // creates projection
 var projection = d3.geoCylindricalStereographic().translate([width/2, height/2]);
@@ -24,7 +24,7 @@ var svg = d3.select('.container')
   .attr('height', height);
 
 
-d3.json('../maps/world.json', function(json) {
+d3.json('maps/world.json', function(json) {
   for (var j = 0; j < json.features.length; j++)  {
     var countryCode = json.features[j].properties.ISO2;
     if (myCountries[countryCode]) {
@@ -52,7 +52,7 @@ d3.json('../maps/world.json', function(json) {
         d3.select(this).style('fill',  visitedHovColor);
       }
       else {
-        d3.select(this).style('fill', notVisitedHovColor)
+        d3.select(this).style('fill', notVisitedHovColor);
       }
     })
     .on('mouseleave', function(d) {
@@ -60,27 +60,28 @@ d3.json('../maps/world.json', function(json) {
         d3.select(this).style('fill', visitiedDefColor);
       }
       else {
-        d3.select(this).style('fill', notVisitiedDefColor)
+        d3.select(this).style('fill', notVisitiedDefColor);
       }
     })
     .on('click', function(d) {
       if (d.properties.visited) {
         if (d.properties.ISO2 == 'US'){
-          window.location.replace('country-us.html')
+          window.location.replace('country.php?country=US');
         }
         else if (d.properties.ISO2 == 'BY'){
-          window.location.replace('country-by.html')
+          window.location.replace('country.php?country=BY');
         }
         else if (d.properties.ISO2 == 'RU'){
-          window.location.replace('country-ru.html')
+          window.location.replace('country.php?country=RU');
         }
         else if (d.properties.ISO2 == 'CA'){
-          window.location.replace('country-ca.html')
+          window.location.replace('country.php?country=CA');
         }
         else {
-          window.location.replace('contact.html')
+          window.location.replace('stats.php');
 
         }
+
       }
       else {
         $('#name-box').text(d.properties.NAME + ' was not visited yet :(');
