@@ -11,8 +11,8 @@
   function setConnection(){
     $servername = "localhost";
     $username = "root";
-    $password = "1234";
-    $dbname = "travel_db";
+    $password = "";
+    $dbname = "db_travel";
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
@@ -48,7 +48,7 @@
     $sql = "SELECT image_description FROM COUNTRIES_IMAGES WHERE country_code = '" . $countryCode . "'";
     $result  = $conn->query($sql);
     while ($row = $result->fetch_assoc()){
-      $parts = explode(',' , $row['image_description']);
+      $parts = explode(';' , $row['image_description']);
       $captions[$number] = $parts[0];
       $captions[$number+1] = $parts[1];
       $number = $number + 2;

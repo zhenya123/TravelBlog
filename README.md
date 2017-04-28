@@ -3,7 +3,7 @@
 ## Notes about running
 
 1. All the js/css files are included into css/dist/js folders. No other imports are needed. (I use bootstrap, highcharts and d3 for the maps.)
-2. I used XAMPP to create this website and the database. Please find the database file in "database" folder and copy it to wherever you keep your database files (/Applications/XAMPP/xamppfiles/var/mysql on my mac).
+2. I used XAMPP to create this website and the database. I am not sure how exactly database should be transferred with XAMPP, so I am submitting my database file in database folder (db_travel) as well as SQL to create this database manually and populate with data in case it doesn't work through just simple file. Sorry about that inconvenience!
 
 ## Notes about implementation
 
